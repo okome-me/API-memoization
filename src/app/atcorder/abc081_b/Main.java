@@ -29,5 +29,6 @@ public class Main {
         }
 
         System.out.printf("%d\n", count);
+        sc.close();
     }
 }

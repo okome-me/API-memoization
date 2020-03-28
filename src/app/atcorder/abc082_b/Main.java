@@ -17,5 +17,6 @@ public class Main {
         revercseT.reverse();
 
         System.out.println(String.valueOf(s).compareTo(revercseT.toString()) < 0 ? "Yes" : "No");
+        sc.close();
     }
 }

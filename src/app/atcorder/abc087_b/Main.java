@@ -41,5 +41,6 @@ public class Main {
         }
 
         System.out.printf("%d\n", way);
+        sc.close();
     }
 }
