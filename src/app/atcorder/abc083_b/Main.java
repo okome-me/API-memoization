@@ -18,7 +18,7 @@ public class Main {
             for (int j = 0; j < array.length; j++) {
                 digit_sum += Integer.parseInt(array[j]);
             }
-            if (digit_sum >= A && digit_sum <= B) {
+            if (A <= digit_sum && digit_sum <= B) {
                 sum += i;
             }
         }
