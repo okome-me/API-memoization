@@ -12,11 +12,11 @@ public class Main {
 
         int sum = 0;
         for (int i = 0; i <= N; i++) {
-            String str = String.valueOf(i);
-            String[] array = str.split("");
             int digit_sum = 0;
-            for (int j = 0; j < array.length; j++) {
-                digit_sum += Integer.parseInt(array[j]);
+            int n = i;
+            while (n>0) {
+                digit_sum += n % 10;
+                n /= 10;
             }
             if (A <= digit_sum && digit_sum <= B) {
                 sum += i;
