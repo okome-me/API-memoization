@@ -1,4 +1,4 @@
-package app.atcorder.arc089_a;
+package app.atcorder.parity.arc089_a;
 
 import java.util.Scanner;
 

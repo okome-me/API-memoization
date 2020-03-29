@@ -1,4 +1,4 @@
-package app.atcorder.arc065_a;
+package app.atcorder.greedy.arc065_a;
 
 import java.util.Scanner;
 

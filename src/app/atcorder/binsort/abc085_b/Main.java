@@ -1,4 +1,4 @@
-package app.atcorder.abc088_b;
+package app.atcorder.binsort.abc085_b;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -9,23 +9,20 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
 
-        int[] A = new int[N];
+        int[] d = new int[N];
         for (int i = 0; i < N; i++) {
-            A[i] = sc.nextInt();
+            d[i] = sc.nextInt();
         }
-        Arrays.sort(A);
+        Arrays.sort(d);
 
-        int Alice = 0;
-        int Bob = 0;
+        int sheets = 0;
         for (int i = 0; i < N; i++) {
-            if (i % 2 == 0) {
-                Alice += A[N-1-i];
-            } else {
-                Bob += A[N-1-i];
+            if (i==0 || d[N-1-i]<d[N-i]) {
+                sheets++;
             }
         }
 
-        System.out.printf("%d\n", Alice - Bob);
+        System.out.printf("%d\n", sheets);
         sc.close();
     }
 }

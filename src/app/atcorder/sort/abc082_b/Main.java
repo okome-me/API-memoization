@@ -1,4 +1,4 @@
-package app.atcorder.abc082_b;
+package app.atcorder.sort.abc082_b;
 
 import java.util.Arrays;
 import java.util.Scanner;

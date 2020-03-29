@@ -1,4 +1,4 @@
-package app.atcorder.abc081_b;
+package app.atcorder.fullsearch.abc081_b;
 
 import java.util.Scanner;
 

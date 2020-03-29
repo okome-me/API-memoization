@@ -1,4 +1,4 @@
-package app.atcorder.abc083_b;
+package app.atcorder.decimal.abc083_b;
 
 import java.util.Scanner;
 

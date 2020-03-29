@@ -1,4 +1,4 @@
-package app.atcorder.abc086_a;
+package app.atcorder.etc.abc086_a;
 
 import java.util.Scanner;
 

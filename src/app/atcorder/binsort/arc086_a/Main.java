@@ -1,4 +1,4 @@
-package app.atcorder.arc086_a;
+package app.atcorder.binsort.arc086_a;
 
 import java.util.Arrays;
 import java.util.Collections;
