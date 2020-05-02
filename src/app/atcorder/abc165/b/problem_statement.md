@@ -1,3 +1,3 @@
 ## Link
 
-https://atcoder.jp/contests/abc164/tasks/abc164_b
+https://atcoder.jp/contests/abc164/tasks/abc165_b

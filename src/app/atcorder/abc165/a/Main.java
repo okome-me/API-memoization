@@ -1,4 +1,4 @@
-package app.atcorder.abc164.a;
+package app.atcorder.abc165.a;
 
 import java.util.Scanner;
 
@@ -6,14 +6,18 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int S = sc.nextInt();
-        int W = sc.nextInt();
-
-        if (W >= S) {
-            System.out.println("unsafe");
-        } else {
-            System.out.println("safe");
-        }
+        int K = sc.nextInt();
+        int A = sc.nextInt();
+        int B = sc.nextInt();
         sc.close();
+
+        while (A <= B) {
+            if (A % K == 0) {
+                System.out.println("OK");
+                return;
+            }
+            A++;
+        }
+        System.out.println("NG");
     }
 }

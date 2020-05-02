@@ -1,26 +1,31 @@
-package app.atcorder.abc164.d;
+package app.atcorder.abc165.d;
 
 import java.util.Scanner;
 
-/**
- * 逆元を利用する
- */
 public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String S = sc.next();
+        long A = sc.nextLong();
+        long B = sc.nextLong();
+        long N = sc.nextLong();
         sc.close();
 
-        int count = 0;
-        for (int j = 4; j <= S.length(); j++) {
-            for (int i = 0; i < j - 3; i++) {
-                if (Float.parseFloat(S.substring(i, j)) % 2019 == 0) {
-                    count++;
-                }
+        if (N > B) {
+            N = B;
+        }
+
+        long max = -1;
+        for (long x = N; x >= 0; x--) {
+            if (x < B - 1 && max != -1) {
+                break;
+            }
+            long letMax = (long) (A * x / B) - A * (long) (x / B);
+            if (letMax >= max) {
+                max = letMax;
             }
         }
 
-        System.out.println(count);
+        System.out.println(max);
     }
 }
